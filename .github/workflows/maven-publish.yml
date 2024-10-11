@@ -25,4 +25,4 @@ jobs:
       run: javac -d out './src/sampleclass.java'
 
     - name: Run the application
-      run: java -cp out './src/sampleclass'
+      run: java -cp out 'com.default package.sampleclass'
