@@ -23,6 +23,3 @@ jobs:
 
     - name: Compile Java files
       run: javac -d out './src/sampleclass.java'
-
-    - name: Run the application
-      run: java -cp out 'com.default package.sampleclass'
