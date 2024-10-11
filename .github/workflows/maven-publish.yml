@@ -19,7 +19,9 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '11'
-        distribution: 'adopt'
+
+    - name: Compile Java files
+      run: javac -d out src/sampleclass.java
 
     - name: Run the application
-      run: mvn exec:java -Dexec.mainClass="/Helloword/src/sampleclass.java"
+      run: java -cp out "/Helloword/src/sampleclass.java"
